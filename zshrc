@@ -1,7 +1,7 @@
 [ -z "$PS1" ] && return
 
 export ZSH_DISABLE_COMPFIX="true"
-export ZSH="/home/tedy/.oh-my-zsh"
+export ZSH="/home/$USER/.oh-my-zsh"
 ZSH_THEME=powerlevel10k/powerlevel10k
 HYPHEN_INSENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
@@ -23,7 +23,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 alias su='sudo -E -s'
 alias cdgit='cd /media/hddext4/Git/'
-export PATH="$PATH:/home/tedy/ADB/:/snap/bin/:/home/tedy/.local/bin"
+export PATH="$PATH:/home/$USER/ADB/:/snap/bin/:/home/$USER/.local/bin"
 export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
 alias yolo='git commit -m "$(curl -s https://whatthecommit.com/index.txt)"'
 
@@ -43,7 +43,7 @@ POWERLEVEL9K_DIR_PATH_ABSOLUTE=false
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_with_package_name"
 POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND="015"
-POWERLEVEL9K_GITSTATUS_DIR="/home/tedy/.oh-my-zsh/custom/plugins/gitstatus"
+POWERLEVEL9K_GITSTATUS_DIR="/home/$USER/.oh-my-zsh/custom/plugins/gitstatus"
 POWERLEVEL9K_GITSTATUS_HIDE_BRANCH_ICON=false
 POWERLEVEL9K_HOST_LOCAL_BACKGROUND='green'
 POWERLEVEL9K_HOST_LOCAL_FOREGROUND='black'

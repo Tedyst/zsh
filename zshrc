@@ -23,7 +23,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 alias su='sudo -E -s'
 alias cdgit='cd /media/hddext4/Git/'
-export PATH="$PATH:/home/$USER/ADB/:/snap/bin/:/home/$USER/.local/bin"
+export PATH="$PATH:/home/$USER/ADB/:/snap/bin:/home/$USER/.local/bin:/home/tedy/go/bin"
 export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
 alias yolo='git commit -m "$(curl -s https://whatthecommit.com/index.txt)"'
 

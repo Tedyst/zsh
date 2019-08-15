@@ -1,12 +1,9 @@
 [submodule "oh-my-zsh-custom/plugins/gitstatus"]
 	path = oh-my-zsh-custom/plugins/gitstatus
-	url = git@github.com:romkatv/gitstatus.git
+	url = https://github.com/romkatv/gitstatus.git
 [submodule "oh-my-zsh-custom/plugins/zsh-autosuggestions"]
-	path = oh-my-zsh-custom/plugins/zsh-autosuggestions
-	url = git@github.com:zsh-users/zsh-autosuggestions
-[submodule "oh-my-zsh-custom/themes/powerlevel9k"]
-	path = oh-my-zsh-custom/themes/powerlevel9k
-	url = git@github.com:bhilburn/powerlevel9k
+	path = oh-my-zsh-custom/plugins/zsh-autosuggestions.git
+	url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule "oh-my-zsh-custom/themes/powerlevel10k"]
-	path = oh-my-zsh-custom/themes/powerlevel10k
+	path = oh-my-zsh-custom/themes/powerlevel10k.git
 	url = https://github.com/romkatv/powerlevel10k.git

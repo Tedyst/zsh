@@ -67,3 +67,6 @@ POWERLEVEL9K_TIME_BACKGROUND='white'
 POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
 
 source $ZSH/oh-my-zsh.sh
+
+unsetopt correct_all  
+setopt correct

@@ -1,7 +1,14 @@
 [ -z "$PS1" ] && return
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block, everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 export ZSH_DISABLE_COMPFIX="true"
 export ZSH="/home/$USER/.oh-my-zsh"
+export GOPATH="/home/tedy/go"
 ZSH_THEME=powerlevel10k/powerlevel10k
 HYPHEN_INSENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
@@ -23,9 +30,10 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 alias su='sudo -E -s'
 alias cdgit='cd /media/hddext4/Git/'
-export PATH="$PATH:/home/$USER/ADB/:/snap/bin:/home/$USER/.local/bin:/home/tedy/go/bin"
+export PATH="$PATH:/home/$USER/ADB/:/snap/bin:/home/$USER/.local/bin:/home/tedy/go/bin:/home/tedy/.cargo/bin"
 export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
 alias yolo='git commit -m "$(curl -s https://whatthecommit.com/index.txt)"'
+export DOCKER_CLI_EXPERIMENTAL=enabled
 
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND='178'
@@ -55,7 +63,7 @@ POWERLEVEL9K_NVM_BACKGROUND="238"
 POWERLEVEL9K_NVM_FOREGROUND="green"
 POWERLEVEL9K_PUBLIC_IP_BACKGROUND='green'
 POWERLEVEL9K_PUBLIC_IP_FOREGROUND='black'
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time_joined background_jobs public_ip)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time_joined background_jobs)
 POWERLEVEL9K_ROOT_INDICATOR_BACKGROUND="grey"
 POWERLEVEL9K_STATUS_ERROR_BACKGROUND='red'
 POWERLEVEL9K_STATUS_ERROR_FOREGROUND='black'

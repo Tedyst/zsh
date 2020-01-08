@@ -2,7 +2,7 @@
 
 ## Usage
 
-You can install this config by pulling the repository to a folder(Recursively) and then running running `install.sh`.
+You can install this config by pulling the repository to a folder and then running running `install.sh`.
 Or alternatively you can run these commands in a folder that you won't delete:
 
 ```bash

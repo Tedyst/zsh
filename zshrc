@@ -9,6 +9,7 @@ fi
 export ZSH_DISABLE_COMPFIX="true"
 export ZSH="/home/$USER/.oh-my-zsh"
 export GOPATH="/home/tedy/go"
+export TERM=xterm-256color
 ZSH_THEME=powerlevel10k/powerlevel10k
 HYPHEN_INSENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"

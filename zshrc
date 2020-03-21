@@ -1,5 +1,7 @@
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE=en_US.UTF-8
+export LC_MESSAGES=en_US.UTF-8
+export LC_COLLATE=en_US.UTF-8
 [ -z "$PS1" ] && return
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]

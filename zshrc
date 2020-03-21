@@ -1,3 +1,4 @@
+export LC_ALL="en_US.UTF-8"
 [ -z "$PS1" ] && return
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -5,6 +6,9 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+#vscode fixes
+export HISTIGNORE="sh /tmp/Microsoft-MIEngine-Cmd*"
 
 export ZSH_DISABLE_COMPFIX="true"
 export ZSH="/home/$USER/.oh-my-zsh"

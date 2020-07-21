@@ -34,8 +34,8 @@ export GO15VENDOREXPERIMENT=1
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 alias su='sudo -E -s'
-alias cdgit='cd /media/hddext4/Git/'
-export PATH="$PATH:/home/$USER/ADB/:/home/$USER/.local/bin:/home/tedy/go/bin:/home/tedy/.cargo/bin"
+alias cdgit='cd /mnt/hddext4/Git/'
+export PATH="$PATH:/home/$USER/.local/bin"
 export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
 export DOCKER_CLI_EXPERIMENTAL=enabled
 

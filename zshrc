@@ -25,12 +25,9 @@ ENABLE_CORRECTION="true"
 plugins=(
       git
       github
-      docker
       zsh-autosuggestions
       sudo
       kubectl
-      zsh_reload
-      helm
 )
 
 export GO15VENDOREXPERIMENT=1
@@ -38,10 +35,8 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 alias su='sudo -E -s'
 alias cdgit='cd /media/hddext4/Git/'
-export PATH="$PATH:/home/$USER/ADB/:/snap/bin:/home/$USER/.local/bin:/home/tedy/go/bin:/home/tedy/.cargo/bin"
+export PATH="$PATH:/home/$USER/ADB/:/home/$USER/.local/bin:/home/tedy/go/bin:/home/tedy/.cargo/bin"
 export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh
-alias yolo='git commit -m "$(curl -s https://whatthecommit.com/index.txt)"'
-alias bfg='java -jar /home/tedy/.local/bfg.jar'
 export DOCKER_CLI_EXPERIMENTAL=enabled
 
 ZSH_AUTOSUGGEST_USE_ASYNC=true

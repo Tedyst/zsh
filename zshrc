@@ -1,7 +1,9 @@
-export LC_ALL="en_US.UTF-8"
+export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export LC_MESSAGES=en_US.UTF-8
 export LC_COLLATE=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US:en
 [ -z "$PS1" ] && return
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -34,6 +36,8 @@ export GO15VENDOREXPERIMENT=1
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 alias su='sudo -E -s'
+alias exi='exit'
+alias ex='exit'
 alias cdgit='cd /mnt/hddext4/Git/'
 export PATH="$PATH:/home/$USER/.local/bin"
 export SSH_AUTH_SOCK=/run/user/1000/gnupg/S.gpg-agent.ssh

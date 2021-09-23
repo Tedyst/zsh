@@ -23,18 +23,15 @@ export PROMPT_EOL_MARK=""
 ZSH_THEME=powerlevel10k/powerlevel10k
 HYPHEN_INSENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 plugins=(
       git
       github
       zsh-autosuggestions
       sudo
-      kubectl
-      helm
 )
 
-export GO15VENDOREXPERIMENT=1
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 alias su='sudo -E -s'
